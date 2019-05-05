@@ -11,8 +11,7 @@ function execute(data) {
   const convertedText = cifrado
     .split("")
     .map(charConversion)
-    .join("")
-    .replace("\u001e", " ");
+    .join("");
 
   data.decifrado = convertedText;
 }
